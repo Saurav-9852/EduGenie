@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100%{
+      background-position: 0% 0%;
+    }
+  }
+  
+  .moving-gradient {
+    background: linear-gradient(45deg, #f3f4f6, #abb7c2);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+  }
+  
